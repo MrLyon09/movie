@@ -5,7 +5,7 @@ export function MovieCard({ movie }) {
   return (
     <li>
     <img src={imageUrl} alt={movie.title} />
-    {movie.title}
+    <div>{movie.title}</div>
   </li>
   );
 }
