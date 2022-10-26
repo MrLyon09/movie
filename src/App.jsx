@@ -1,3 +1,5 @@
+import { MoviesGrid } from "./MoviesGrid";
+
 export function App() {
   return (
     <div>
@@ -5,12 +7,7 @@ export function App() {
         <h1>Movies</h1>
       </header>
       <main>
-        <ul>
-            <li>Movie1</li>
-            <li>Movie2</li>
-            <li>Movie3</li>
-        </ul>
-
+        <MoviesGrid></MoviesGrid>
       </main>
     </div>
   );
