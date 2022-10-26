@@ -1,11 +1,15 @@
 import React from "react";
+import movies from "./movies.json";
 
 export function MoviesGrid() {
+  //    console.log(movies);// see all content in console
   return (
     <ul>
-      <li>Movie1</li>
-      <li>Movie2</li>
-      <li>Movie3</li>
+      {movies.map(
+        (movie) => (
+          <li key={movie.id}>{movie.title}</li>
+        )
+      )}
     </ul>
   );
 }
