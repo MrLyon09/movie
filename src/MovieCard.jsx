@@ -1,10 +1,12 @@
 import React from "react";
+import styles from './MovieCard.module.css'
 
 export function MovieCard({ movie }) {
+    console.log(styles);
   const imageUrl = "http://image.tmdb.org/t/p/w300" + movie.poster_path;
   return (
-    <li>
-    <img src={imageUrl} alt={movie.title} />
+    <li className= {styles.movieCard}>
+    <img className={styles.movieImage} src={imageUrl} alt={movie.title} />
     <div>{movie.title}</div>
   </li>
   );
