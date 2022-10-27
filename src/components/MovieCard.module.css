@@ -5,10 +5,17 @@
     
 }
 
+.movieCard:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    
+}
 .movieImage{
     border-radius: 10px;
     background-color: azure;
 }
+
+
 
 @media(max-width:560px){
     .movieImage{

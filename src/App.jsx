@@ -9,7 +9,7 @@ export function App() {
     <Router>
       <header>
         <Link to="/">
-          <h1 className={styles.title}>Movies FREE</h1>
+          <h1 className={styles.title}>CALEDONIAmovies</h1>
         </Link>
 
         <Link to="/">Home</Link>
@@ -18,10 +18,10 @@ export function App() {
       </header>
       <main>
         <Switch>
-          <Route exact path="/movie">
+          <Route exact path="/movies/:movieId">
             <MovieDetails />
           </Route>
-          <Route  path="/">
+          <Route path="/">
             <LandingPage />
           </Route>
           <Route path="/">ERROR 404 - PAGE NO FOUND</Route>
