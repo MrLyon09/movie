@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { MovieCard } from "./MovieCard";
-import movies from "./movies.json";
+
 import styles from "./MoviesGrid.module.css";
 
 export function MoviesGrid() {
@@ -14,9 +14,9 @@ export function MoviesGrid() {
         "Content-type": "application/json;charset=utf-8",
       },
     }).then(result =>result.json()).then((data)=>{
-      movies = data.results;
+      setMovies(data.results);
     });
-  });
+  },[]);
 
 
   return (
