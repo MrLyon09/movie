@@ -14,14 +14,14 @@ export function App() {
 
         <Link to="/">Home</Link>
         <br />
-        <Link to="/movie">movie</Link>
+        <Link to="/movies">movie</Link>
       </header>
       <main>
         <Switch>
           <Route exact path="/movie">
             <MovieDetails />
           </Route>
-          <Route exact path="/">
+          <Route  path="/">
             <LandingPage />
           </Route>
           <Route path="/">ERROR 404 - PAGE NO FOUND</Route>
